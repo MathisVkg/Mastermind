@@ -38,13 +38,14 @@ buttons.forEach((btn) => {
 var coloChoice;
 let stockPrompt = 0;
 var stockGoodColor = 0;
+var stockBest = 0;
 function promptMe(){
     colorChoice = prompt("Choice your color");
     setBackGround = event.target;
     setBackGround.setAttribute("style", "background-color:" + colorChoice);
     event.target.disabled = "true";
     stockPrompt++;
-    // console.log(stockPrompt);
+    // console.log("prompt= " + stockPrompt);
 }
 function checkColorTrue() {
     if(colorChoice === colorOne) {
@@ -59,21 +60,21 @@ function checkColorTrue() {
     else if(colorChoice === colorFour) {
         stockGoodColor++;
     }
-    else if(stockPrompt === 4) {
+    if(stockPrompt === 4) {
+        stockBest = stockGoodColor;
+        stockPrompt = 0;
         stockGoodColor = 0;
-        document.getElementById("testo").innerHTML = "Good color: " + stockGoodColor;
+        document.getElementById("textP").innerHTML = "Best find: " + stockBest;
     }
-    console.log(stockGoodColor);
-    document.getElementById("testo").innerHTML = "Good color: " + stockGoodColor;
+    if(stockBest === 4) {
+        document.getElementById("colorGood").innerHTML = "";
+        document.getElementById("textP").innerHTML = "";
+        document.getElementById("winner").innerHTML = "You find the color, you Win";
+    }
+    // console.log(stockGoodColor);
+    document.getElementById("colorGood").innerHTML = "Good color: " + stockGoodColor;
 }
 
-// function createText() {
-//     let testP = document.createElement("p");
-//     testP.setAttribute("class", "testP");
-//     testP.setAttribute("id", "testo" + a);
-//     testP.innerHTML = stockGoodColor;
-//     document.getElementById("square1").appendChild(testP);
-// }
 // console.log(randomNumber);
 // console.log(randomColor);
 console.log(colorOne);

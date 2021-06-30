@@ -71,10 +71,23 @@ header {
     border: none;
 }
 
-.testP {
+.colorGood {
     text-align: center;
     color: white;
     margin-top: 2%;
     font-size: 20px;
+    text-shadow: 3px 2px 0px #c11a2b;
+}
+.textP {
+    text-align: center;
+    color: white;
+    margin-top: 1%;
+    font-size: 19px;
+}
+.winner {
+    text-align: center;
+    color: white;
+    margin-top: 1%;
+    font-size: 50px;
     text-shadow: 3px 2px 0px #c11a2b;
 }
