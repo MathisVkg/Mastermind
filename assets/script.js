@@ -1,11 +1,11 @@
 
 const color = [
-    "blue",
-    "yellow",
-    "orange",
-    "red",
-    "green",
-    "white",
+    "blue", //#88C4D7
+    "yellow", //#EEE8AB
+    "orange", //#EA915E
+    "red", //#FF6962
+    "green", //#85B464
+    "white", //#F4F4F4
 ]
 
 // var randomNumber = Math.floor(Math.random() * 6);
@@ -42,7 +42,18 @@ var stockBest = 0;
 function promptMe(){
     colorChoice = prompt("Choice your color");
     setBackGround = event.target;
-    setBackGround.setAttribute("style", "background-color:" + colorChoice);
+    if(colorChoice === "red") 
+        setBackGround.setAttribute("style", "background-color: #FF6962");
+    if(colorChoice === "blue")
+        setBackGround.setAttribute("style", "background-color: #88C4D7");
+    if(colorChoice === "green")
+        setBackGround.setAttribute("style", "background-color: #85B464");
+    if(colorChoice === "yellow")
+        setBackGround.setAttribute("style", "background-color: #EEE8AB");
+    if(colorChoice === "orange")
+        setBackGround.setAttribute("style", "background-color: #EA915E");
+    if(colorChoice === "white")
+        setBackGround.setAttribute("style", "background-color: #F4F4F4");
     event.target.disabled = "true";
     stockPrompt++;
     // console.log("prompt= " + stockPrompt);
