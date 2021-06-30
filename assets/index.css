@@ -1,0 +1,94 @@
+body {
+  background-color: #303030;
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 7%;
+}
+
+header h1 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: white;
+  font-size: 77px;
+  font-weight: 900;
+  background-color: #c11a2b;
+  padding-top: 25px;
+  height: 78px;
+  font-family: 'Niconne', cursive;
+  text-shadow: 3px 2px 0px #eb452b, 6px 4px 0px #efa032, 9px 6px 0px #46b59b, 12px 9px 0px #017e7f, 15px 12px 0px #052939, 18px 15px 0px #c11a2b;
+}
+
+header .copyright {
+  text-decoration: none;
+  color: white;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+header .copyright:hover {
+  color: #c11a2b;
+  font-size: 18px;
+}
+
+.color {
+  color: white;
+  text-align: center;
+}
+
+.color h3 {
+  font-size: 23px;
+  text-shadow: 3px 2px 0px #c11a2b;
+  margin-bottom: 0;
+}
+
+.color .recap {
+  margin-bottom: 2%;
+  margin-top: 5px;
+}
+
+.squareFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.box {
+  padding: 15px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  margin-left: 0.2%;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 2%;
+  margin-bottom: 5%;
+  border: none;
+}
+
+.testP {
+  text-align: center;
+  color: white;
+  margin-top: 2%;
+  font-size: 20px;
+  text-shadow: 3px 2px 0px #c11a2b;
+}
+/*# sourceMappingURL=index.css.map */
