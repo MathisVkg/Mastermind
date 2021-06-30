@@ -8,7 +8,7 @@
 
 ## See the project
 
-- <a href="https://mathisvkg.github.io/Mastermind/" target="_blank">Hardcore Hangman Game</a>
+- <a href="https://mathisvkg.github.io/Mastermind/" target="_blank">Mastermind game</a>
 
 ### Prerequisites
 
