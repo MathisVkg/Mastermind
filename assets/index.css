@@ -87,7 +87,6 @@ header .copyright:hover {
 .colorGood {
   text-align: center;
   color: white;
-  margin-top: 2%;
   font-size: 20px;
   text-shadow: 3px 2px 0px #c11a2b;
 }
@@ -96,7 +95,7 @@ header .copyright:hover {
   text-align: center;
   color: white;
   margin-top: 1%;
-  margin-bottom: 5%;
+  margin-bottom: 2%;
   font-size: 19px;
 }
 
